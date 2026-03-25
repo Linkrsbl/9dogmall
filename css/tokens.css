@@ -1,0 +1,29 @@
+:root {
+  --color-white: #ffffff;
+  --color-paper: #f9f7f7;
+  --color-soft-blue: #dbe2ef;
+  --color-blue: #1769ff;
+  --color-navy: #112d4e;
+
+  --color-text-main: var(--color-navy);
+  --color-text-sub: rgba(17, 45, 78, 0.72);
+  --color-text-inverse: #ffffff;
+
+  --color-border: rgba(17, 45, 78, 0.08);
+  --color-border-strong: rgba(17, 45, 78, 0.16);
+
+  --font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+
+  --radius-sm: 10px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+  --radius-xl: 32px;
+  --radius-pill: 999px;
+
+  --shadow-sm: 0 10px 24px rgba(17, 45, 78, 0.05);
+  --shadow-md: 0 16px 36px rgba(17, 45, 78, 0.08);
+  --shadow-lg: 0 24px 56px rgba(17, 45, 78, 0.16);
+
+  --max-width: 1180px;
+  --z-sticky: 100;
+}
