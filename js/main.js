@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   toastTriggers.forEach((trigger) => {
     trigger.addEventListener('click', () => {
-      showToast('데모 화면이라 실제 상담 채널로 연결되진 않아요. 운영 단계에서는 상담 폼이나 문의 채널로 바로 이어서 쓸 수 있어요.');
+      showToast('현재는 데모 화면이라 실제 상담 채널로 연결되진 않아요. 운영 단계에서는 상담 폼이나 문의 채널로 바로 이어서 사용할 수 있어요.');
     });
   });
 });

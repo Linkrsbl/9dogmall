@@ -191,6 +191,7 @@ img {
   margin: 0;
   letter-spacing: -0.045em;
   line-height: 1.08;
+  word-break: keep-all;
 }
 
 .hero-copy h1 {
@@ -206,14 +207,13 @@ img {
 .difference-item p,
 .step-copy p,
 .benefit-card p,
-.reason-copy p,
-.operation-card li,
 .hero-note p,
 .final-cta p,
 .cta-caption {
   margin: 0;
   line-height: 1.75;
   color: var(--color-text-sub);
+  word-break: keep-all;
 }
 
 .hero-lead {
@@ -243,9 +243,7 @@ img {
 .hero-points div,
 .overview-card,
 .difference-item,
-.benefit-card,
-.reason-copy,
-.operation-card {
+.benefit-card {
   padding: 22px;
   border-radius: 24px;
   border: 1px solid var(--color-border);
@@ -257,14 +255,13 @@ img {
 .difference-item h3,
 .step-copy h3,
 .benefit-card h3,
-.reason-copy h3,
-.operation-card h3,
 .hero-note strong {
   display: block;
   margin-bottom: 10px;
   line-height: 1.25;
   letter-spacing: -0.03em;
   color: var(--color-text-main);
+  word-break: keep-all;
 }
 
 .hero-points strong {
@@ -404,22 +401,6 @@ img {
   height: 460px;
 }
 
-.reason-panel {
-  display: grid;
-  grid-template-columns: minmax(0, 1.15fr) minmax(280px, 0.85fr);
-  gap: 18px;
-  margin-top: 22px;
-}
-
-.process-list {
-  margin: 16px 0 0;
-  padding-left: 18px;
-}
-
-.process-list li + li {
-  margin-top: 10px;
-}
-
 .final-cta {
   padding: 52px 40px;
   border-radius: 32px;
@@ -540,8 +521,7 @@ img {
 }
 
 @media (max-width: 1080px) {
-  .hero,
-  .reason-panel {
+  .hero {
     grid-template-columns: 1fr;
     min-height: auto;
   }
@@ -644,8 +624,6 @@ img {
   .difference-item p,
   .step-copy p,
   .benefit-card p,
-  .reason-copy p,
-  .operation-card li,
   .hero-note p,
   .final-cta p,
   .cta-caption {
