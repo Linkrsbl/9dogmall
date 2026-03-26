@@ -376,7 +376,118 @@ img {
 }
 
 .difference-list {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.audience-grid,
+.benefit-grid {
+  display: grid;
+  gap: 18px;
+}
+
+.audience-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin-bottom: 18px;
+}
+
+.audience-panel {
+  padding: 22px;
+  border-radius: 28px;
+  border: 1px solid var(--color-border);
+  background: rgba(255, 255, 255, 0.92);
+}
+
+.audience-label {
+  display: inline-flex;
+  align-items: center;
+  min-height: 34px;
+  padding: 0 14px;
+  border-radius: var(--radius-pill);
+  background: rgba(63, 114, 175, 0.1);
+  color: var(--color-blue);
+  font-size: 0.82rem;
+  font-weight: 700;
+}
+
+.audience-panel h3,
+.category-copy strong {
+  letter-spacing: -0.03em;
+  color: var(--color-text-main);
+  word-break: keep-all;
+}
+
+.audience-panel h3 {
+  margin: 14px 0 8px;
+  font-size: 1.35rem;
+  line-height: 1.3;
+  min-height: calc(1.35rem * 1.3 * 3);
+}
+
+.audience-panel p,
+.category-copy span {
+  color: var(--color-text-sub);
+  word-break: keep-all;
+}
+
+.audience-panel p {
+  font-size: 0.95rem;
+  line-height: 1.68;
+  min-height: calc(0.95rem * 1.68 * 2);
+}
+
+.category-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+  margin-top: 16px;
+}
+
+.category-item {
+  display: grid;
+  grid-template-columns: 40px minmax(0, 1fr);
+  gap: 12px;
+  align-items: center;
+  min-height: 88px;
+  padding: 12px 14px;
+  border-radius: 18px;
+  background: rgba(219, 226, 239, 0.18);
+}
+
+.category-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 14px;
+  background: rgba(63, 114, 175, 0.12);
+  color: var(--color-navy);
+}
+
+.category-icon svg {
+  width: 20px;
+  height: 20px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.85;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.category-copy {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.category-copy strong {
+  font-size: 0.95rem;
+  line-height: 1.35;
+}
+
+.category-copy span {
+  font-size: 0.84rem;
+  line-height: 1.45;
 }
 
 .benefit-grid {
@@ -560,6 +671,7 @@ img {
   }
 
   .difference-list,
+  .audience-grid,
   .benefit-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -586,9 +698,19 @@ img {
   .hero-points,
   .overview-grid,
   .difference-list,
+  .audience-grid,
   .benefit-grid,
   .journey-step {
     grid-template-columns: 1fr;
+  }
+
+  .category-list {
+    grid-template-columns: 1fr;
+  }
+
+  .audience-panel h3,
+  .audience-panel p {
+    min-height: 0;
   }
 
   .hero-copy h1 {
